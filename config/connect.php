@@ -1,7 +1,7 @@
 <?php	
 	$user = 'root';
-	$password = '';
-	$host = 'localhost';
+	$password = 'beta-zeta-omega';
+	$host = 'informatics.ckup5zfedqvi.us-west-2.rds.amazonaws.com';
 	$db = 'nba_stats';
 
 	try {
