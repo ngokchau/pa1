@@ -6,7 +6,7 @@
 
 	$sql = "
 		SELECT * 
-		FROM $db.players 
+		FROM nba_stats.players 
 		WHERE playerName LIKE '%$playerName%'
 	";
 	$result = $dbh->query($sql);
