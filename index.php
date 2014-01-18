@@ -15,22 +15,20 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
 					<div class="input-group">
-						<input type="text" class="form-control" name='playerName' id='playerName' placeholder='name'>
+						<input type="text" class="form-control" name='playerName' id='playerName' placeholder='NBA Player Name'>
 						<span class="input-group-btn">
 							<button class="btn btn-success" type="button" onclick="search()">Search</button>
 						</span>
 					</div>
 				</div>
 			</div>
-			<br>
+			<br >
 			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-sm-offset-2" id="resultSet"></div>
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2" id="resultSet">
+					<!-- data goes here -->
+				</div>
 			</div>
 		</div>
-			
-
-
-		
 
 	</body>
 </html>
