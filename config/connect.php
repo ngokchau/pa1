@@ -6,7 +6,7 @@
 	$db = 'nba_stats';
 
 	try {
-		$dbh = new PDO("mysql:host=$host;port=$portdbname=$db", $user, $password);
+		$dbh = new PDO("mysql:host=$host;port=$port;dbname=$db;", $user, $password);
 	} catch (PDOException $e) {
 		die('Could not connect to database: '.$e->getMessage());
 	}
