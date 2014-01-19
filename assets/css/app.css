@@ -1,5 +1,5 @@
 body {
-	padding-top: 100px;
+	padding: 100px 0;
 }
 
 #resultSet:first-child {
@@ -32,4 +32,5 @@ body {
 .table th,
 .table td {
 	font-size: 0.9em;
+	text-align: center;
 }
