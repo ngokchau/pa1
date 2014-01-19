@@ -12,6 +12,5 @@
 			echo "$name is saved"."<br>";
 		else
 			echo "$name is not saved"."<br>";
-
 	}
  ?>

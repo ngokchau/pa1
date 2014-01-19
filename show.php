@@ -14,7 +14,7 @@
 		echo "<div class='col-xs-6 col-md-4'>";
 		echo "<div class='panel panel-default card'>";
 		echo "<div class='panel-heading'>";
-		echo "<h5 class='panel-title text-center'>".$players[$k]->getPlayerName()."</h5>";
+		echo "<h5 class='panel-title text-center'><a href='http://www.nba.com/playerfile/$name/'>".$players[$k]->getPlayerName()."</a></h5>";
 		echo "</div>";
 
 		echo "<div class='panel-body'>";
