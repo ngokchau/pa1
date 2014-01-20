@@ -10,17 +10,13 @@
 	// } catch (PDOException $e) {
 	// 	die('Could not connect to database: '.$e->getMessage());
 	// }
-
+	$playerName = $_GET['playerName'];
 	try {
 		$dbh = new PDO("mysql:host=$host;port=$port;dbname=$db;", $user, $password);
-		$stmt = $dbh->prepare("SELECT * FROM nba_stats.players WHERE playerName LIKE :playerName");
-		$stmt->execute(array('playerName' => 'james'));
+		$stmt = $dbh->prepare("SELECT * FROM players WHERE playerName LIKE :playerName");
+		$stmt->execute(array('playerName' => "%$playerName%"));
 		$result = $stmt->fetchAll();
-
-		foreach($result as $row) {
-			echo $result;
-		}
-
+		
 	} catch(PDOException $e) {
 		echo 'ERROR: '.$e->getMessage();
 	}

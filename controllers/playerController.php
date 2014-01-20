@@ -2,20 +2,15 @@
 	require_once('config/connect.php');
 	require_once('models/player.php');
 
-	// $playerName = $_GET['playerName'];
+	if(count($result)) {
+		$players = array();
 
-	// $sql = "
-	// 	SELECT * 
-	// 	FROM nba_stats.players 
-	// 	WHERE playerName LIKE '%$playerName%'
-	// ";
-	// $result = $dbh->query($sql);
+		foreach($result as $row) {
+			$players[$row['playerID']] = new Player($row['playerID'], $row['playerName'], $row['gp'], $row['fgp'], $row['tpp'], $row['ftp'], $row['ppg']);
+		}
+	} else {
+		$players = null;
+	}
 
-	// $players = array();
-
-	// foreach($result as $row) {
-	// 	$players[$row['playerID']] = new Player($row['playerID'], $row['playerName'], $row['gp'], $row['fgp'], $row['tpp'], $row['ftp'], $row['ppg']);
-	// }
-
-	// $dbh = null;
+	$dbh = null;
 ?>
