@@ -38,7 +38,7 @@
 			echo "</div>";
 		}
 	} else {
-		echo "<div class='col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4'>";
+		echo "<div class='col-xs-6 col-md-4'>";
 		echo "<div class='panel panel-default card'>";
 		echo "<div class='panel-heading'>";
 		echo "<h5 class='panel-title text-center'>No Result</h5>";
