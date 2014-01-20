@@ -1,11 +1,9 @@
 <?php	
 	$user = 'root';
-	$password = '';
+	$password = 'beta-zeta-omega';
 	$port = 3306;
-	$host = 'localhost';
+	$host = 'informatics.ckup5zfedqvi.us-west-2.rds.amazonaws.com';
 	$db = 'nba_stats';
-
-// informatics.ckup5zfedqvi.us-west-2.rds.amazonaws.com
 
 	// try {
 	// 	$dbh = new PDO("mysql:host=$host;port=$port;dbname=$db;", $user, $password);
