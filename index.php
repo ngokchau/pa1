@@ -8,6 +8,13 @@
 		<script type="text/javascript" src='assets/js/ajax.js'></script>		
 		<script type="text/javascript" src='assets/js/bootstrap.min.js'></script>
 
+		<script>
+			// function init() {
+			// 	document.onkeydown = search();
+			// 	setTimeout('init()', 100);
+			// }
+		</script>
+
 	</head>
 	<body>
 
