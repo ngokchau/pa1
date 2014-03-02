@@ -30,7 +30,7 @@
 		header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 		
 		$callback = $_GET['callback'];
-		echo $callback.'('.json_encode($jsonpResult).');';
+		echo $callback.'('.$jsonpResult.');';
 	} else {
 		echo json_encode($jsonpResult);
 	}
