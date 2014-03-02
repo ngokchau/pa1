@@ -15,7 +15,8 @@
 	$jsonpResult = array();
 
 	foreach($players as $k => $v) {
-		$jsonpResult[$players[$k]->getPlayerName()] = array(
+		$jsonpResult[$players[$k]->getPlayerId()] = array(
+			"name"=>$players[$k]->getPlayerName(),
 			"gp"=>$players[$k]->getPlayerGp(),
 			"fgp"=>$players[$k]->getPlayerFgp(),
 			"tpp"=>$players[$k]->getPlayerTpp(),
