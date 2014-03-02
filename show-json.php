@@ -29,7 +29,7 @@
 		}		
 		
 		$callback = $_GET['callback'];
-		echo $callback.'('.$jsonpResult.');';
+		echo $callback.'('.json_encode($jsonpResult).');';
 	} else {
 		echo json_encode($players);
 	}
