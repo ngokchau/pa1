@@ -20,6 +20,6 @@
 		$callback = $_GET['callback'];
 		echo $callback.'('.json_encode($players).');';
 	} else {
-		echo $players;
+		echo json_encode($players);
 	}
 ?>
