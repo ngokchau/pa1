@@ -18,7 +18,7 @@
 		header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 
 		$callback = $_GET['callback'];
-		echo $callback.'('.json_encode($players).');';
+		echo $callback.'('.$players.');';
 	} else {
 		echo json_encode($players);
 	}
